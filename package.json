@@ -1,0 +1,26 @@
+{
+  "title": "f4rside website",
+  "name": "f4rside-site",
+  "version": "0.0.1",
+  "private": true,
+  "description": "The f4side static website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server \"src\" --files \"src\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RatJuggler/f4rside-site.git"
+  },
+  "keywords": [],
+  "author": "John Chase",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RatJuggler/f4rside-site/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  }
+}
