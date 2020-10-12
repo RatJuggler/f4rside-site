@@ -7,58 +7,59 @@
 
 html {
   background: url(../img/Satori-Mountain-Sunset-2560.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
 body {
+  margin: 1em;
   color: white;
-  background-color: #F7C998;
   font-family: 'Gotu', sans-serif;
+  font-weight: 900;
+  text-shadow: 0 1px black;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+  margin-top: 0.5em;
+}
+
+p {
   font-size: 1.5em;
 }
 
-.title {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.bio {
-  position: absolute;
-  top: 200px;
-  left: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.tuition {
-  position: absolute;
-  top: 500px;
-  left: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.contact-details {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.bandcamp {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+dl {
+  font-size: 1.5em;
 }
 
 a {
   color: white;
+  text-decoration-line: underline;
 }
+
 a:hover {
-  font-weight: bold;
+  color: seashell;
+  text-decoration-line: none;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1em;
+  }
+  dl {
+    font-size: 1em;
+  }
 }
