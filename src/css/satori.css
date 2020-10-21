@@ -14,7 +14,7 @@ body {
   margin: 1em;
   color: white;
   font-family: 'Gotu', sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   text-shadow: 0 1px black;
 }
 
@@ -35,9 +35,22 @@ p {
   font-size: 1.5em;
 }
 
-dl {
+ul, dl {
   font-size: 1.5em;
 }
+
+li {
+  display: inline-block;
+}
+
+dl dd {
+  float: left;
+}
+
+dl dt {
+  float: left;
+}
+
 
 a {
   color: white;
