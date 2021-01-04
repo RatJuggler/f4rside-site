@@ -1,9 +1,29 @@
 # f4rside-site
+
 The F4rside website.
 
-Based on the Stellar template by HTML5 UP.
+Based on the Stellar template by [HTML5 UP](https://html5up.net/).
+
+### Development
+
+`npm` targets available during development:
+
+- start - runs [browser-sync](https://browsersync.io/) so you can see changes to the static files as they are made.
+
+### Testing
+
+A Docker file is available to create an image for testing:
+
+- docker / nginx - The static files served from an [Nginx](https://www.nginx.com/) instance.
+
+  Create an image with: `docker build -f docker/nginx/Dockerfile -t f4side .`
+
+  Then run with: `docker run -d -p 8080:80 f4side`
+
+  Content will be available at: `http://localhost:8080`
 
 ---
+
 Stellar by HTML5 UP
 
 html5up.net | @ajlkn
