@@ -12,15 +12,16 @@ Based on the Stellar template by [HTML5 UP](https://html5up.net/).
 
 ### Testing
 
-A Docker file is available to create an image for testing:
+A Docker file is available to create an image for testing with the static files served from my [Nginx](https://www.nginx.com/) 
+golden image.
 
-- docker / nginx - The static files served from an [Nginx](https://www.nginx.com/) instance.
+- Create an image with: `docker build -f docker/nginx/Dockerfile -t f4side-site .`
 
-  Create an image with: `docker build -f docker/nginx/Dockerfile -t f4side .`
-
-  Then run with: `docker run -d -p 8080:80 f4side`
+  Then run with: `docker run -d -p 8080:80 f4side-site`
 
   Content will be available at: `http://localhost:8080`
+
+- Or build and run with: `docker-compose up`
 
 ---
 
