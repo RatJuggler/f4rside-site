@@ -1,7 +1,7 @@
 {
   "title": "f4rside website",
   "name": "f4rside-site",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "description": "The f4side static website.",
   "main": "index.js",
@@ -21,6 +21,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.26.13"
+    "browser-sync": "^2.26.14"
   }
 }
