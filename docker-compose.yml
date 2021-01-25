@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  f4rside-site:
+    image: johnchase/f4rside-site:${BUILD_TAG:-latest}
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+      target: f4rside-site
+    ports:
+      - "8080:80"
+    restart: unless-stopped
