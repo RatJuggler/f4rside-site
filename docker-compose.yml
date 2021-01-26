@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   f4rside-site:
-    image: johnchase/f4rside-site:${BUILD_TAG:-latest}
+    image: ${dockerId:-johnchase}/f4rside-site:${BUILD_TAG:-latest}
     build:
       context: .
       dockerfile: ./docker/nginx/Dockerfile
