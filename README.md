@@ -21,7 +21,11 @@ golden image.
 
   Content will be available at: `http://localhost:8080`
 
-- Or build and run with: `docker-compose up`
+### Full Application
+
+A docker-compose configuration is also available to build, tag and run the image:
+
+    docker-compose up -d
 
 ---
 
