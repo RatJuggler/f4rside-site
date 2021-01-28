@@ -12,8 +12,7 @@ Based on the Stellar template by [HTML5 UP](https://html5up.net/).
 
 ### Testing
 
-A Docker file is available to create an image for testing with the static files served from my [Nginx](https://www.nginx.com/) 
-golden image.
+A Docker file is available to create an image for testing with the static files served using my [Nginx golden image](https://github.com/RatJuggler/my-production-docker-build).
 
 - Create an image with: `docker build -f docker/nginx/Dockerfile -t f4side-site .`
 
