@@ -8,7 +8,8 @@ Based on the Stellar template by [HTML5 UP](https://html5up.net/).
 
 `npm` targets available during development:
 
-- start - runs [browser-sync](https://browsersync.io/) so you can see changes to the static files as they are made.
+- start - runs a development server so that you can see changes to the static files as they are made.
+- build - runs a deployment build (experimental, not integrated with docker build).
 
 ### Testing
 
