@@ -1,11 +1,16 @@
 version: '3.8'
 
+x-args: &args
+  args:
+    BUILD_TAG: ${BUILD_TAG:-local}
+
 services:
   f4rside-site:
-    image: ${dockerId:-johnchase}/f4rside-site:${BUILD_TAG:-local}
+    image: ${DOCKER_REGISTRY}${DOCKER_ID}f4rside-site:${IMAGE_TAG:-latest}
     build:
       context: .
       dockerfile: ./docker/nginx/Dockerfile
+      <<: *args
       target: f4rside-site
     ports:
       - "8080:80"

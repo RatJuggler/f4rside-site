@@ -27,6 +27,8 @@ A docker-compose configuration is also available to build, tag and run the image
 
     docker-compose up -d
 
+Environment variables can be used to configure the registry, account and image and build tags (see the file).
+
 ---
 
 Stellar by HTML5 UP

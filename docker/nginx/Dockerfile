@@ -1,5 +1,7 @@
 # Create a Nginx image.
-FROM johnchase/golden-nginx:latest AS f4rside-site
+ARG DOCKER_REGISTRY=""
+ARG DOCKER_ID=""
+FROM ${DOCKER_REGISTRY}${DOCKER_ID}golden-nginx:latest AS f4rside-site
 
 ARG BUILD_TAG=local
 LABEL build_tag=${BUILD_TAG}
