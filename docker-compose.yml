@@ -6,7 +6,7 @@ x-args: &args
 
 services:
   f4rside-site:
-    image: ${DOCKER_REGISTRY}${DOCKER_ID}f4rside-site:${IMAGE_TAG:-latest}
+    image: ${REGISTRY}${REPOSITORY}f4rside-site:${IMAGE_TAG:-latest}
     build:
       context: .
       dockerfile: ./docker/nginx/Dockerfile
