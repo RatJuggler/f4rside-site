@@ -8,7 +8,7 @@ LABEL build_tag=${BUILD_TAG}
 LABEL description="The F4rside site"
 
 HEALTHCHECK --interval=5m --timeout=30s --start-period=60s --retries=3 \
-    CMD ["curl", "--silent", "--fail", "http://localhost/health"]
+    CMD ["curl", "--silent", "--fail", "http://localhost:8000/health"]
 
 # Create a folder to serve the public files from.
 WORKDIR /srv
